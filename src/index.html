@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white font-['Plus_Jakarta_Sans',_sans-serif] text-slate-800">
+
+    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <div class="flex items-center gap-20">
+            <div class="flex items-center gap-2.5">
+                <img src="/img/icon.png" alt="LokalaMart Logo" class="h-9 w-auto">
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="index.html" class="text-blue-600">Beranda</a>
+                <a href="product-page.html" class="hover:text-blue-600 transition">Produk</a>
+                <a href="about-page.html" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="contact-page.html" class="hover:text-blue-600 transition">Kontak</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="relative hidden sm:block">
+                <input type="text" placeholder="Cari..." class="bg-slate-100 border-none rounded-xl py-2.5 px-5 text-sm w-48 focus:ring-2 focus:ring-blue-500 outline-none">
+                <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+            </div>
+            <button class="bg-blue-600 text-white px-7 py-2.5 rounded-xl text-sm font-semibold hover:bg-blue-700 transition">Masuk</button>
+        </div>
+    </nav>
+
+    <header class="relative overflow-hidden pt-24 pb-24 text-center">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <span class="bg-blue-100 text-blue-600 px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider">Temukan 500+ Produk UMKM Lokal</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold mt-6 leading-tight">
+                Temukan Produk <br> <span class="text-blue-600">UMKM Lokal</span> Terbaik
+            </h1>
+            <p class="text-slate-500 mt-7 text-lg max-w-2xl mx-auto leading-relaxed">
+                Temukan kerajinan tangan unik, kuliner autentik, dan fashion berkelanjutan. Semuanya bersumber langsung dari pelaku usaha terbaik di komunitas anda.
+            </p>
+
+            <div class="mt-12 max-w-4xl mx-auto bg-white p-6 rounded-[32px] shadow-[0_20px_50px_rgba(0,0,0,0.05)] border border-slate-50">
+                <div class="relative flex items-center">
+                    <input 
+                        type="text" 
+                        placeholder="Apa yang anda cari hari ini..." 
+                        class="w-full py-5 px-8 rounded-2xl border border-slate-200 text-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent placeholder:text-slate-300 transition-all"
+                    >
+                    <button class="absolute right-2 bg-blue-600 text-white w-14 h-14 rounded-2xl hover:bg-blue-700 transition flex items-center justify-center shadow-lg shadow-blue-200">
+                        <i class="fas fa-search text-xl"></i>
+                    </button>
+                </div>
+
+                <div class="flex flex-wrap gap-3 mt-6">
+                    <button class="bg-blue-600 text-white px-7 py-2.5 rounded-full text-sm font-semibold shadow-md shadow-blue-100 border border-blue-600">
+                        Oleh oleh
+                    </button>
+                    
+                    <button class="bg-white text-slate-900 px-7 py-2.5 rounded-full text-sm font-medium border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition cursor-pointer">
+                        Minuman khas
+                    </button>
+                    
+                    <button class="bg-white text-slate-900 px-7 py-2.5 rounded-full text-sm font-medium border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition cursor-pointer">
+                        Kerajinan tangan
+                    </button>
+                    
+                    <button class="bg-white text-slate-900 px-7 py-2.5 rounded-full text-sm font-medium border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition cursor-pointer">
+                        Kuliner lokal
+                    </button>
+                    
+                    <button class="bg-white text-slate-900 px-7 py-2.5 rounded-full text-sm font-medium border border-slate-200 hover:border-blue-400 hover:text-blue-600 transition cursor-pointer">
+                        Makanan khas
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-7xl mx-auto px-8 py-16">
+        <div class="flex justify-between items-end mb-12">
+            <div>
+                <h2 class="text-3xl font-bold">Sedang Tren</h2>
+                <p class="text-slate-500 mt-2">Pilihan terpopuler di platform dalam minggu ini.</p>
+            </div>
+            <a href="#" class="text-blue-600 font-bold flex items-center gap-2 hover:underline group">
+                Lihat Semua 
+                <i class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-9">
+            <div class="group">
+                <div class="relative overflow-hidden rounded-2xl aspect-square bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="/img/cangkir-keramik.png" alt="Cangkir" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3.5 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-tight shadow-sm">Produk Baru</span>
+                </div>
+                <div class="mt-5">
+                    <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition">Cangkir Keramik Artisan</h3>
+                    <div class="flex items-center gap-2.5 mt-1.5">
+                        <span class="text-blue-600 font-bold text-xl">IDR 75.000</span>
+                        <span class="text-slate-400 text-sm line-through">IDR 90.000</span>
+                    </div>
+                    <p class="text-slate-400 text-xs mt-2 italic flex items-center gap-1.5"><i class="fas fa-store text-[10px]"></i> Oleh Toko Desa</p>
+                </div>
+            </div>
+            <div class="group">
+                <div class="relative overflow-hidden rounded-2xl aspect-square bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="/img/sambal-warisan.png" alt="Sambal" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
+                    <span class="absolute top-4 left-4 bg-blue-600 text-white px-3.5 py-1.5 rounded-lg text-[10px] font-bold uppercase tracking-tight shadow-md">Terlaris</span>
+                </div>
+                <div class="mt-5">
+                    <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition">Sambal Warisan</h3>
+                    <div class="flex items-center gap-2.5 mt-1.5">
+                        <span class="text-blue-600 font-bold text-xl">IDR 45.000</span>
+                        <span class="text-slate-400 text-sm line-through">IDR 50.000</span>
+                    </div>
+                    <p class="text-slate-400 text-xs mt-2 italic flex items-center gap-1.5"><i class="fas fa-store text-[10px]"></i> Oleh Dapur Mama</p>
+                </div>
+            </div>
+            <div class="group">
+                <div class="relative overflow-hidden rounded-2xl aspect-square bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="/img/kemeja-batik.png" alt="Batik" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="mt-5">
+                    <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition">Kemeja Batik Linen</h3>
+                    <div class="flex items-center gap-2.5 mt-1.5">
+                        <span class="text-blue-600 font-bold text-xl">IDR 150.000</span>
+                        <span class="text-slate-400 text-sm line-through">IDR 185.000</span>
+                    </div>
+                    <p class="text-slate-400 text-xs mt-2 italic flex items-center gap-1.5"><i class="fas fa-store text-[10px]"></i> Oleh Batik Madura</p>
+                </div>
+            </div>
+            <div class="group">
+                <div class="relative overflow-hidden rounded-2xl aspect-square bg-slate-100 shadow-sm border border-slate-100">
+                    <img src="/img/keranjang-anyaman.png" alt="Bamboo" class="object-cover w-full h-full group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="mt-5">
+                    <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition">Keranjang Anyaman</h3>
+                    <div class="flex items-center gap-2.5 mt-1.5">
+                        <span class="text-blue-600 font-bold text-xl">IDR 24.000</span>
+                        <span class="text-slate-400 text-sm line-through">IDR 30.000</span>
+                    </div>
+                    <p class="text-slate-400 text-xs mt-2 italic flex items-center gap-1.5"><i class="fas fa-store text-[10px]"></i> Oleh Crafty Village</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-8 py-12">
+        <div class="bg-blue-600 rounded-[40px] p-12 md:p-20 flex flex-col md:flex-row items-center gap-16 relative overflow-hidden shadow-2xl shadow-blue-100">
+            <div class="absolute -top-24 -right-24 w-64 h-64 border-[30px] border-white/10 rounded-full"></div>
+            <div class="absolute -bottom-24 -left-24 w-64 h-64 border-[30px] border-white/10 rounded-full"></div>
+            <div class="flex-1 text-white z-10">
+                <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Pilihan Terbaik:<br> Kebanggaan Lokal</h2>
+                <p class="mt-7 text-blue-100 text-lg opacity-90 leading-relaxed font-light">
+                    Temukan produk unggulan dari pengrajin dan pelaku UMKM terbaik di seluruh Indonesia. Kualitas terjamin, langsung dari tangan pembuatnya.
+                </p>
+                <div class="mt-12 flex flex-wrap gap-5">
+                    <button class="bg-white text-blue-600 px-9 py-4 rounded-2xl font-bold hover:bg-blue-50 transition shadow-lg shadow-white/10 flex items-center gap-2.5">
+                        Beli Koleksi <i class="fas fa-shopping-bag"></i>
+                    </button>
+                    <button class="border border-white/40 text-white px-9 py-4 rounded-2xl font-bold hover:bg-white/10 transition flex items-center gap-2.5">
+                        Pelajari lebih lanjut <i class="fas fa-info-circle text-xs"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="flex-1 grid grid-cols-2 gap-4 w-full max-w-md relative z-10">
+                <div class="rounded-3xl overflow-hidden aspect-square bg-blue-400 shadow-xl"><img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=250" class="w-full h-full object-cover"></div>
+                <div class="rounded-3xl overflow-hidden aspect-square bg-blue-400 shadow-xl"><img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&q=80&w=250" class="w-full h-full object-cover"></div>
+                <div class="rounded-3xl overflow-hidden aspect-square bg-blue-400 shadow-xl"><img src="https://images.unsplash.com/photo-1713191352960-911f277876a7?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="w-full h-full object-cover"></div>
+                <div class="rounded-3xl overflow-hidden aspect-square bg-blue-400 shadow-xl"><img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&q=80&w=250" class="w-full h-full object-cover"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-8 py-20 text-center">
+        <h2 class="text-3xl font-bold">Berdasarkan Kategori</h2>
+        <p class="text-slate-500 mt-2">Apa pun yang Anda cari, semuanya ada di sini.</p>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-7 mt-14">
+            <div class="bg-slate-50 p-10 rounded-3xl hover:bg-orange-50 transition group cursor-pointer border border-transparent hover:border-orange-100 shadow-sm hover:shadow-lg">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">🍪</div>
+                <p class="font-bold text-sm text-slate-800">Camilan</p>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-3xl hover:bg-green-50 transition group cursor-pointer border border-transparent hover:border-green-100 shadow-sm hover:shadow-lg">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">🏺</div>
+                <p class="font-bold text-sm text-slate-800">Mebel</p>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-3xl hover:bg-blue-50 transition group cursor-pointer border border-transparent hover:border-blue-100 shadow-sm hover:shadow-lg">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">⌚</div>
+                <p class="font-bold text-sm text-slate-800">Aksesoris</p>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-3xl hover:bg-yellow-50 transition group cursor-pointer border border-transparent hover:border-yellow-100 shadow-sm hover:shadow-lg">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">👔</div>
+                <p class="font-bold text-sm text-slate-800">Pakaian</p>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-3xl hover:bg-purple-50 transition group cursor-pointer border border-transparent hover:border-purple-100 shadow-sm hover:shadow-lg">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">🧸</div>
+                <p class="font-bold text-sm text-slate-800">Mainan</p>
+            </div>
+            <div class="bg-slate-50 p-10 rounded-3xl hover:bg-red-50 transition group cursor-pointer border border-transparent hover:border-red-100 shadow-sm hover:shadow-lg">
+                <div class="text-4xl mb-4 group-hover:scale-110 transition duration-300">💄</div>
+                <p class="font-bold text-sm text-slate-800">Dekorasi</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 text-slate-400 pt-24 pb-12 mt-24">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-5 gap-16 border-b border-slate-800 pb-20">
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 mb-7">
+                    <img src="/img/second-icon.png" alt="LokalaMart Logo" class="h-8 w-auto">
+                </div>
+                <p class="text-sm leading-relaxed">Platform digital yang mempertemukan UMKM lokal dengan pembeli di seluruh Indonesia untuk membangun ekonomi yang berkelanjutan.</p>
+                <p class="mt-5 text-xs italic font-light">Sudirman Kav. 12, Jakarta Selatan, 12190 Indonesia</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-7 text-lg">Halaman Utama</h4>
+                <ul class="space-y-4.5 text-sm">
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Beranda</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Produk UMKM</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Tentang Kami</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Kontak</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-7 text-lg">Jelajahi</h4>
+                <ul class="space-y-4.5 text-sm">
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Temuan Terkini</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Kategori Produk</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Produk Terbaru</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> UMKM Terpilih</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-7 text-lg">Bisnis</h4>
+                <ul class="space-y-4.5 text-sm">
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Daftar Penjual</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Pusat Bantuan</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Katalog UMKM</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Mitra Logistik</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-7 text-lg">Newsletter</h4>
+                <p class="text-sm mb-5 leading-relaxed">Dapatkan info produk UMKM terbaru dan promo eksklusif.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Email address" class="bg-slate-800/60 border border-slate-700/50 rounded-lg px-5 py-3 text-sm w-full focus:ring-1 focus:ring-blue-500 focus:border-blue-500 outline-none placeholder:text-slate-500">
+                    <button class="bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-bold hover:bg-blue-700 transition flex items-center justify-center gap-1.5">
+                        Join <i class="fas fa-paper-plane text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 font-light gap-4">
+            <p>LokalaMart © 2026. Semua hak cipta dilindungi oleh undang-undang.</p>
+            <div class="flex gap-6 items-center">
+                <a href="#" class="hover:text-white flex items-center gap-1.5"><i class="fas fa-globe text-[10px]"></i> ID</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <div class="flex gap-4.5 text-slate-600 ml-4">
+                    <a href="#" class="hover:text-white transition text-sm"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white transition text-sm"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition text-sm"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
