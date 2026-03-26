@@ -18,18 +18,32 @@
                 <img src="/img/icon.png" alt="LokalaMart Logo" class="h-9 w-auto">
             </div>
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
-                <a href="index.html" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="home-page.html" class="hover:text-blue-600 transition">Beranda</a>
                 <a href="product-page.html" class="text-blue-600">Produk</a>
                 <a href="about-page.html" class="hover:text-blue-600 transition">Tentang</a>
                 <a href="contact-page.html" class="hover:text-blue-600 transition">Kontak</a>
             </div>
         </div>
-        <div class="flex items-center gap-4">
+        <div class="flex items-center gap-6">
             <div class="relative hidden sm:block">
                 <input type="text" placeholder="Cari..." class="bg-slate-100 border-none rounded-xl py-2.5 px-5 text-sm w-48 focus:ring-2 focus:ring-blue-500 outline-none">
                 <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
             </div>
-            <button class="bg-blue-600 text-white px-7 py-2.5 rounded-xl text-sm font-semibold hover:bg-blue-700 transition">Masuk</button>
+
+            <a href="cart-page.html" class="relative group p-2 text-slate-600 hover:text-blue-600 transition">
+                <i class="fas fa-shopping-cart text-xl"></i>
+                <span class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full border-2 border-white">2</span>
+            </a>
+
+            <div class="flex items-center gap-3 pl-2 border-l border-slate-200">
+                <div class="text-right hidden lg:block">
+                    <p class="text-xs font-bold text-slate-900 leading-none">Gaza Fathya</p>
+                    <p class="text-[10px] text-slate-400 mt-1 uppercase tracking-tighter">Pembeli</p>
+                </div>
+                <button class="w-10 h-10 rounded-full bg-slate-100 border-2 border-transparent hover:border-blue-500 transition overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=100" alt="User Profile" class="w-full h-full object-cover">
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -119,7 +133,7 @@
                     
                     <div class="bg-white border border-slate-100 rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition duration-500 group relative">
                         <div class="relative aspect-square bg-slate-100 flex items-center justify-center p-3">
-                            <img src="https://images.unsplash.com/photo-1578749553376-372993848b3c?auto=format&fit=crop&q=80&w=500" alt="Mug" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                            <img src="/img/cangkir-keramik.png" alt="Mug" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
                             <button class="absolute top-5 right-5 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:text-red-500 hover:scale-110 transition group/wish">
                                 <i class="far fa-heart transition group-hover/wish:font-bold"></i>
                             </button>
@@ -141,7 +155,7 @@
 
                     <div class="bg-white border border-slate-100 rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition duration-500 group relative">
                         <div class="relative aspect-square bg-slate-100 flex items-center justify-center p-3">
-                            <img src="https://images.unsplash.com/photo-1606041008023-472dfb5e530f?auto=format&fit=crop&q=80&w=500" alt="Scarf" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                            <img src="/img/syal.png" alt="Scarf" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
                             <button class="absolute top-5 right-5 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md text-red-500 hover:scale-110 transition group/wish">
                                 <i class="fas fa-heart"></i>
                             </button>
@@ -155,15 +169,15 @@
                                 <i class="fas fa-map-marker-alt text-[10px]"></i> Solo, Jawa Tengah
                             </p>
                             <div class="flex items-center justify-between mt-7 pt-5 border-t border-slate-100">
-                                <span class="font-extrabold text-blue-600 text-xl tracking-tight">IDR 320.000</span>
-                                <button class="bg-slate-950 text-white text-xs font-bold px-4 py-2.5 rounded-lg hover:bg-blue-600 transition">Lihat Detail</button>
+                                <span class="font-extrabold text-blue-600 text-xl tracking-tight">IDR 250.000</span>
+                                <button class="bg-slate-950 text-white text-xs font-bold px-4 py-2.5 rounded-lg hover:bg-blue-600 transition" onclick="window.location.href='detail-page.html'">Lihat Detail</button>
                             </div>
                         </div>
                     </div>
 
                     <div class="bg-white border border-slate-100 rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition duration-500 group relative">
                         <div class="relative aspect-square bg-slate-100 flex items-center justify-center p-3">
-                            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&q=80&w=500" alt="Coffee" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                            <img src="/img/sambal-warisan.png" alt="Coffee" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
                             <button class="absolute top-5 right-5 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:text-red-500 hover:scale-110 transition group/wish">
                                 <i class="far fa-heart transition group-hover/wish:font-bold"></i>
                             </button>
@@ -172,9 +186,9 @@
                             <div class="flex items-center gap-2 text-[10px] font-bold text-blue-600 uppercase mb-2.5">
                                 <i class="fas fa-store"></i> Kopi Gayo Roasters
                             </div>
-                            <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition truncate">Premium Arabica Beans 250g</h3>
+                            <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition truncate">Sambal Warisan Khas Nusantara</h3>
                             <p class="text-xs text-slate-400 flex items-center gap-1.5 mt-1.5 italic">
-                                <i class="fas fa-map-marker-alt text-[10px]"></i> Takengon, Aceh
+                                <i class="fas fa-map-marker-alt text-[10px]"></i> Bandung, Jawa Barat
                             </p>
                             <div class="flex items-center justify-between mt-7 pt-5 border-t border-slate-100">
                                 <span class="font-extrabold text-blue-600 text-xl tracking-tight">IDR 85.000</span>
@@ -185,7 +199,7 @@
 
                     <div class="bg-white border border-slate-100 rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition duration-500 group relative">
                         <div class="relative aspect-square bg-slate-100 flex items-center justify-center p-3">
-                            <img src="https://images.unsplash.com/photo-1531104935605-3b27176db72e?auto=format&fit=crop&q=80&w=500" alt="Bag" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.YOPGVO0RHfRjte0GmLQYVQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bag" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
                             <button class="absolute top-5 right-5 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:text-red-500 hover:scale-110 transition group/wish">
                                 <i class="far fa-heart transition group-hover/wish:font-bold"></i>
                             </button>
@@ -207,7 +221,7 @@
 
                     <div class="bg-white border border-slate-100 rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition duration-500 group relative">
                         <div class="relative aspect-square bg-slate-100 flex items-center justify-center p-3">
-                            <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&q=80&w=500" alt="Spoons" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                            <img src="https://tse3.mm.bing.net/th/id/OIP.NaxOK5lNk9QGY5GzFSpvQQHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Spoons" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
                             <button class="absolute top-5 right-5 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:text-red-500 hover:scale-110 transition group/wish">
                                 <i class="far fa-heart transition group-hover/wish:font-bold"></i>
                             </button>
@@ -229,7 +243,7 @@
 
                     <div class="bg-white border border-slate-100 rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition duration-500 group relative">
                         <div class="relative aspect-square bg-slate-100 flex items-center justify-center p-3">
-                            <img src="https://images.unsplash.com/photo-1614735241165-69344b0d8839?auto=format&fit=crop&q=80&w=500" alt="Honey" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                            <img src="https://m.media-amazon.com/images/I/41qiqdxwmwL.jpg" alt="Honey" class="w-full h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
                             <button class="absolute top-5 right-5 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-md hover:text-red-500 hover:scale-110 transition group/wish">
                                 <i class="far fa-heart transition group-hover/wish:font-bold"></i>
                             </button>
@@ -238,9 +252,9 @@
                             <div class="flex items-center gap-2 text-[10px] font-bold text-blue-600 uppercase mb-2.5">
                                 <i class="fas fa-store"></i> Madu Organic
                             </div>
-                            <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition truncate">Wild Forest Honey 500ml</h3>
+                            <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition truncate">Mangkok Kotak Keramik Tradisional</h3>
                             <p class="text-xs text-slate-400 flex items-center gap-1.5 mt-1.5 italic">
-                                <i class="fas fa-map-marker-alt text-[10px]"></i> Sumbawa, NTB
+                                <i class="fas fa-map-marker-alt text-[10px]"></i> Magelang, Jawa Tengah
                             </p>
                             <div class="flex items-center justify-between mt-7 pt-5 border-t border-slate-100">
                                 <span class="font-extrabold text-blue-600 text-xl tracking-tight">IDR 175.000</span>

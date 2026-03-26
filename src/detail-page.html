@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-white font-['Plus_Jakarta_Sans',_sans-serif] text-slate-800">
+
+    <nav class="flex items-center justify-between px-8 py-6 max-w-7xl mx-auto">
+        <div class="flex items-center gap-20">
+            <div class="flex items-center gap-2.5">
+                <img src="/img/icon.png" alt="LokalaMart Logo" class="h-9 w-auto">
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+                <a href="home-page.html" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="product-page.html" class="hover:text-blue-600 transition">Produk</a>
+                <a href="about-page.html" class="hover:text-blue-600 transition">Tentang</a>
+                <a href="contact-page.html" class="hover:text-blue-600 transition">Kontak</a>
+            </div>
+        </div>
+        <div class="flex items-center gap-6">
+            <div class="relative hidden sm:block">
+                <input type="text" placeholder="Cari..." class="bg-slate-100 border-none rounded-xl py-2.5 px-5 text-sm w-48 focus:ring-2 focus:ring-blue-500 outline-none">
+                <i class="fas fa-search absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
+            </div>
+
+            <a href="cart-page.html" class="relative group p-2 text-slate-600 hover:text-blue-600 transition">
+                <i class="fas fa-shopping-cart text-xl"></i>
+                <span class="absolute top-0 right-0 bg-red-500 text-white text-[10px] font-bold w-4 h-4 flex items-center justify-center rounded-full border-2 border-white">3</span>
+            </a>
+
+            <div class="flex items-center gap-3 pl-2 border-l border-slate-200">
+                <div class="text-right hidden lg:block">
+                    <p class="text-xs font-bold text-slate-900 leading-none">Gaza Fathya</p>
+                    <p class="text-[10px] text-slate-400 mt-1 uppercase tracking-tighter">Pembeli</p>
+                </div>
+                <button class="w-10 h-10 rounded-full bg-slate-100 border-2 border-transparent hover:border-blue-500 transition overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=100" alt="User Profile" class="w-full h-full object-cover">
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-8 py-16">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+            
+            <div class="space-y-6">
+                <div class="aspect-square w-full rounded-3xl bg-slate-100 p-8 flex items-center justify-center overflow-hidden border border-slate-100">
+                    <img src="/img/syal.png" alt="Syal Indigo" class="w-full h-full object-cover rounded-xl">
+                </div>
+                <div class="grid grid-cols-4 gap-4">
+                    <button class="aspect-square rounded-2xl bg-slate-100 p-2 flex items-center justify-center overflow-hidden border-2 border-blue-500 shadow-md">
+                        <img src="/img/syal.png" class="w-auto h-full object-cover rounded-md">
+                    </button>
+                    <button class="aspect-square rounded-2xl bg-slate-100 p-2 flex items-center justify-center overflow-hidden border border-slate-100 hover:border-blue-200 transition">
+                        <img src="/img/syal-2.png" class="w-auto h-full object-fill opacity-70 rounded-md">
+                    </button>
+                    <button class="aspect-square rounded-2xl bg-slate-100 p-2 flex items-center justify-center overflow-hidden border border-slate-100 hover:border-blue-200 transition">
+                        <img src="/img/syal-3.png" class="w-auto h-full object-cover opacity-70 rounded-md">
+                    </button>
+                    <button class="aspect-square rounded-2xl bg-slate-100 p-2 flex items-center justify-center overflow-hidden border border-slate-100 hover:border-blue-200 transition">
+                        <img src="/img/syal-2.png" class="w-auto h-full object-fill opacity-70 rounded-md">
+                    </button>
+                </div>
+            </div>
+
+            <div class="space-y-10">
+                <div>
+                    <span class="bg-blue-100 text-blue-600 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">Fashion & Tekstil</span>
+                    <h1 class="text-5xl font-extrabold text-slate-950 mt-5 leading-tight">Syal Indigo Buatan Tangan</h1>
+                    
+                    <div class="flex items-center gap-6 mt-6 pb-6 border-b border-slate-100">
+                        <div class="flex items-center gap-1.5 text-yellow-500 text-sm">
+                            <i class="fas fa-star"></i> <span class="text-slate-900 font-bold">4.8</span>
+                        </div>
+                        <a href="#ulasan" class="text-slate-500 text-sm hover:text-blue-600 hover:underline transition">124 Ulasan</a>
+                        <span class="text-slate-500 text-sm">|</span>
+                        <span class="text-slate-500 text-sm font-medium">500+ Terjual</span>
+                    </div>
+                </div>
+
+                <div class=" border-b border-slate-100">
+                    <p class="text-slate-400 text-sm">Harga</p>
+                    <div class="flex items-end gap-3 mt-2">
+                        <h2 class="text-4xl font-extrabold text-blue-600">IDR 250.000</h2>
+                        <span class="text-slate-300 text-lg line-through">IDR 300.000</span>
+                    </div>
+                </div>
+
+                <div class="space-y-6 border-b border-slate-100">
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-900 mb-3">Pola</label>
+                        <div class="flex items-center gap-3">
+                            <button class="px-5 py-3 rounded-full border-2 border-blue-600 bg-blue-50 text-blue-600 font-bold text-sm shadow-md">Ocean Waves</button>
+                            <button class="px-5 py-3 rounded-full border border-slate-200 bg-white text-slate-700 font-medium text-sm hover:border-blue-300 transition">Classic Batik</button>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-900 mb-3">Kuantitas</label>
+                        <div class="inline-flex items-center gap-3 border border-slate-200 rounded-full p-1.5 bg-white shadow-inner">
+                            <button class="w-9 h-9 flex items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-full transition"><i class="fas fa-minus text-xs"></i></button>
+                            <span class="text-xl font-bold text-slate-950 min-w-[30px] text-center">1</span>
+                            <button class="w-9 h-9 flex items-center justify-center text-slate-400 hover:text-slate-600 hover:bg-slate-50 rounded-full transition"><i class="fas fa-plus text-xs"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <button class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-md hover:bg-blue-700 transition flex items-center justify-center gap-3 shadow-lg shadow-blue-100">
+                        <i class="fas fa-shopping-cart text-sm opacity-80"></i> Tambahkan ke Keranjang
+                    </button>
+                    <button class="w-full bg-white text-blue-700 py-4 rounded-xl font-bold text-md border-2 border-blue-700 hover:bg-slate-50 transition flex items-center justify-center gap-3">
+                        Beli Sekarang
+                    </button>
+                </div>
+
+                <div class="bg-white border border-slate-100 rounded-2xl p-6 flex items-center justify-between shadow-xl shadow-slate-50">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-full bg-slate-100 overflow-hidden flex items-center justify-center text-blue-600">
+                            <i class="fas fa-store text-3xl opacity-70"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-lg text-slate-950">Lestari Batik Studio</p>
+                            <p class="text-xs text-slate-400 flex items-center gap-1.5 mt-1italic">
+                                <i class="fas fa-map-marker-alt text-[10px]"></i> DI Yogyakarta, Yogyakarta
+                            </p>
+                        </div>
+                    </div>
+                    <button class="bg-blue-50 text-blue-600 px-5 py-2.5 rounded-xl text-sm font-bold hover:bg-blue-100 transition" onclick="window.location.href='shop-page.html'">Kunjungi Toko</button>
+                </div>
+
+            </div>
+        </div>
+
+        <section class="mt-24 space-y-6">
+            <h2 class="text-3xl font-bold text-slate-950">Deskripsi</h2>
+            <p class="text-slate-600 leading-relaxed max-w-5xl">
+                Syal indigo premium ini merupakan mahakarya kerajinan tradisional Indonesia. Setiap potong syal ditenun dengan presisi oleh pengrajin lokal di Yogyakarta, menggunakan pewarna alami berbahan dasar tumbuhan. Warna biru yang dihasilkan diperoleh melalui proses fermentasi alami selama 14 hari, yang menjamin warna yang unik dan tahan lama. Sangat cocok untuk segala musim, bahan campuran katun dan sutra yang ringan ini memberikan kenyamanan ekstra. Motif "Ocean Waves" terinspirasi dari pesisir selatan Jawa, yang melambangkan kebebasan dan gerakan yang harmonis.
+            </p>
+            <ul class="list-disc list-inside space-y-2 text-slate-600 leading-relaxed max-w-5xl">
+                <li>100% campuran katun dan sutra organik</li>
+                <li>Pewarna alami dari Indigofera tinctoria</li>
+                <li>Ukuran: 180 cm x 60 cm</li>
+                <li>Tepian yang digulung dengan tangan untuk ketahanan</li>
+                <li>Produksi yang berkelanjutan dan ramah lingkungan</li>
+            </ul>
+        </section>
+
+        <section id="ulasan" class="mt-24 space-y-12">
+            <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+                <h2 class="text-3xl font-bold text-slate-950">Ulasan Pelanggan</h2>
+                <div class="flex items-center gap-3">
+                    <span class="text-slate-500 font-medium">Filter</span>
+                    <select class="bg-white border border-slate-200 rounded-xl px-4 py-2 text-sm font-medium outline-none focus:ring-2 focus:ring-blue-500 text-slate-700 cursor-pointer">
+                        <option>Bintang Tertinggi</option>
+                        <option>Bintang Terendah</option>
+                        <option>Terbaru</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="space-y-10">
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-xl shadow-slate-50 hover:border-blue-100 transition duration-300">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-xl">
+                            S
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-lg text-slate-950">Sarah Wijaya</h4>
+                                <span class="text-xs text-slate-300 font-medium">1 minggu yang lalu</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 text-yellow-500 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="text-xs text-yellow-600 font-bold ml-1">5 / 5</span>
+                            </div>
+                            <p class="text-slate-600 leading-relaxed">
+                                Syalnya sangat indah, halus sekali saat disentuh. Warnanya indigo yang sangat elegan dan autentik. Pengirimannya juga cepat dan dikemas dengan rapi. Sangat merekomendasikan produk ini!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-slate-200 rounded-3xl p-8 shadow-xl shadow-slate-50 hover:border-blue-100 transition duration-300">
+                    <div class="flex items-start gap-5">
+                        <div class="w-14 h-14 rounded-full bg-slate-100 flex items-center justify-center text-slate-400 font-bold text-xl">
+                            B
+                        </div>
+                        <div class="flex-1 space-y-4">
+                            <div class="flex items-center justify-between">
+                                <h4 class="font-bold text-lg text-slate-950">Budi Pratama</h4>
+                                <span class="text-xs text-slate-300 font-medium">3 hari yang lalu</span>
+                            </div>
+                            <div class="flex items-center gap-1.5 text-yellow-500 text-sm">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                <span class="text-xs text-yellow-600 font-bold ml-1">5 / 5</span>
+                            </div>
+                            <p class="text-slate-600 leading-relaxed">
+                                Produknya sesuai deskripsi. Bahannya lembut dan adem dipakai. Warnanya tidak luntur setelah dicuci pertama kali. Respon penjual sangat baik dan ramah. Terimakasih!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="w-full bg-white border-2 border-slate-200 text-slate-600 py-4 rounded-xl font-bold text-sm hover:bg-slate-50 hover:border-blue-100 transition shadow-lg shadow-slate-50">
+                    Lihat Semua Ulasan (124)
+                </button>
+            </div>
+        </section>
+
+        <section class="mt-24 rounded-3xl p-10 space-y-8 border border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-950">Informasi Pengiriman</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex items-start gap-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-lg shadow-slate-100">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-truck text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg text-slate-950">Pengiriman Standar</p>
+                        <p class="text-slate-500 text-sm leading-relaxed mt-1">Estimasi 2-4 hari kerja (pulau Jawa) atau 4-7 hari kerja (luar pulau Jawa). Biaya dihitung saat checkout.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-5 bg-white p-6 rounded-2xl border border-slate-200 shadow-lg shadow-slate-100">
+                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-box text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold text-lg text-slate-950">Keaslian Terjamin</p>
+                        <p class="text-slate-500 text-sm leading-relaxed mt-1">Produk dikirim langsung dari pengrajin Lestari Batik Studio. Jaminan uang kembali 100% jika terbukti palsu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-24 space-y-12">
+            <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+                <h2 class="text-3xl font-bold text-slate-950">Produk Serupa</h2>
+                <a href="#" class="text-blue-600 font-bold flex items-center gap-1 hover:underline text-sm">
+                    Lihat Koleksi Fashion <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-9">
+                <div class="bg-white border border-slate-100 rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition duration-500 group cursor-pointer relative">
+                    <div class="relative aspect-square bg-slate-100 flex items-center justify-center p-3">
+                        <img src="/img/recommend-syal.png" alt="Serupa 1" class="w-auto h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                        <button class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-tight shadow-sm opacity-0 group-hover:opacity-100 transition">Lihat</button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition truncate">Syal Sutra Abstrak</h3>
+                        <div class="flex items-center justify-between mt-6">
+                            <span class="font-extrabold text-blue-600 text-xl tracking-tight">IDR 310.000</span>
+                            <span class="text-slate-300 text-sm line-through">IDR 350k</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border border-slate-100 rounded-[32px] overflow-hidden hover:shadow-2xl hover:shadow-slate-200/50 transition duration-500 group cursor-pointer relative">
+                    <div class="relative aspect-square bg-slate-100 flex items-center justify-center p-3">
+                        <img src="/img/recommend-syal-2.png" alt="Serupa 2" class="w-auto h-full object-cover rounded-2xl group-hover:scale-105 transition duration-500">
+                        <button class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-tight shadow-sm opacity-0 group-hover:opacity-100 transition">Lihat</button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-slate-900 group-hover:text-blue-700 transition truncate">Syal Katun Hijau Tua</h3>
+                        <div class="flex items-center justify-between mt-6">
+                            <span class="font-extrabold text-blue-600 text-xl tracking-tight">IDR 285.000</span>
+                            <span class="text-slate-300 text-sm line-through">IDR 320k</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-950 text-slate-400 pt-24 pb-12 mt-24">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-5 gap-16 border-b border-slate-800 pb-20">
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-3 mb-7">
+                    <img src="/img/second-icon.png" alt="LokalaMart Logo" class="h-8 w-auto">
+                </div>
+                <p class="text-sm leading-relaxed">Platform digital yang mempertemukan UMKM lokal dengan pembeli di seluruh Indonesia untuk membangun ekonomi yang berkelanjutan.</p>
+                <p class="mt-5 text-xs italic font-light">Sudirman Kav. 12, Jakarta Selatan, 12190 Indonesia</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-7 text-lg">Halaman Utama</h4>
+                <ul class="space-y-4.5 text-sm">
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Beranda</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Produk UMKM</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Tentang Kami</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Kontak</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-7 text-lg">Jelajahi</h4>
+                <ul class="space-y-4.5 text-sm">
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Temuan Terkini</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Kategori Produk</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Produk Terbaru</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> UMKM Terpilih</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-7 text-lg">Bisnis</h4>
+                <ul class="space-y-4.5 text-sm">
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Daftar Penjual</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Pusat Bantuan</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Katalog UMKM</a></li>
+                    <li><a href="#" class="hover:text-white transition flex items-center gap-2"><i class="fas fa-chevron-right text-[10px] text-blue-500"></i> Mitra Logistik</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-7 text-lg">Newsletter</h4>
+                <p class="text-sm mb-5 leading-relaxed">Dapatkan info produk UMKM terbaru dan promo eksklusif.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Email address" class="bg-slate-800/60 border border-slate-700/50 rounded-lg px-5 py-3 text-sm w-full focus:ring-1 focus:ring-blue-500 focus:border-blue-500 outline-none placeholder:text-slate-500">
+                    <button class="bg-blue-600 text-white px-5 py-3 rounded-lg text-sm font-bold hover:bg-blue-700 transition flex items-center justify-center gap-1.5">
+                        Join <i class="fas fa-paper-plane text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-8 pt-10 flex flex-col md:flex-row justify-between items-center text-xs text-slate-500 font-light gap-4">
+            <p>LokalaMart © 2026. Semua hak cipta dilindungi oleh undang-undang.</p>
+            <div class="flex gap-6 items-center">
+                <a href="#" class="hover:text-white flex items-center gap-1.5"><i class="fas fa-globe text-[10px]"></i> ID</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <div class="flex gap-4.5 text-slate-600 ml-4">
+                    <a href="#" class="hover:text-white transition text-sm"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white transition text-sm"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition text-sm"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
